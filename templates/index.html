@@ -1,0 +1,18 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Welcome to Home page</h2>
+    <br><br>
+    <form action="{{ url_for('linear') }}" method="post">
+      <div>
+        <label>Country Name</label>
+        <input type="text" name="Country_Name">
+      </div>
+      <div>
+        <label>GDP:</label>
+        <input type="text" name="GDP">
+      </div>
+      <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+{% endblock %}
